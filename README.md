@@ -1,2 +1,13 @@
 # blog
 blog website for meklit technologies
+ADMIN LOGIN DETAILS - RESPONSIVE BLOG SITE PHP
+
+Username: admin
+
+Password: admin
+
+
+DON'T FORGET TO CREATE A DATABASE NAMING "blog_admin_db" AND IMPORT THE SQL FILE AND RUN.
+WITHOUT THE DATABASE THE PROJECT WON'T RUN.
+
+>>DATABASE FILE IS INSIDE "databasefile" FOLDER

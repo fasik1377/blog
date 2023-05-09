@@ -58,14 +58,30 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
+							<?php  $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        								if(strpos($url,'index.php') == true){?>
 							<li class="nav-item active">
 								<a class="nav-link" href="index.php">Home
 									<span class="sr-only">(current)</span>
 								</a>
+							</li> <?php } else { ?>
+								
+							<li class="nav-item">
+								<a class="nav-link" href="index.php">Home
+									<span class="sr-only">(current)</span>
+								</a>
 							</li>
+								<?php } ?>
+							<?php  $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        								if(strpos($url,'about.php') == true){?>
+							<li class="nav-item active">
+								<a class="nav-link" href="about.php">About</a>
+							</li>
+							<?php } else { ?>
 							<li class="nav-item">
 								<a class="nav-link" href="about.php">About</a>
 							</li>
+								<?php } ?>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 								    aria-expanded="false">
@@ -76,9 +92,16 @@
 									<?php getcategoriesmenu("blog_categories"); ?>
 								</div>
 							</li>
+							<?php  $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        								if(strpos($url,'contact.php') == true){?>
+							<li class="nav-item active">
+								<a class="nav-link" href="contact.php">Contact</a>
+							</li>
+							<?php } else { ?>
 							<li class="nav-item">
 								<a class="nav-link" href="contact.php">Contact</a>
 							</li>
+								<?php }?>
 
 						</ul>
 							<form action="search.php" method="post" class="form-inline my-2 my-lg-0 header-search" name="form">
