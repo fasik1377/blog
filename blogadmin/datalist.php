@@ -980,7 +980,7 @@ class DataList{
 				$result = sql($tvQuery . " limit " . ($i-1) . ",{$this->RecordsPerPage}", $eo);
 				while(($row = db_fetch_array($result)) && ($i < ($FirstRecord + $this->RecordsPerPage))){
 					/* skip displaying the current record if we're in TVP or multiple DVP and the record is not checked */
-					if(($PrintTV || $Print_x) && count($_REQUEST['record_selector']) && !in_array($row[$FieldCountTV], $_REQUEST['record_selector'])) continue;
+					if(($PrintTV || $Print_x) && is_countable($_REQUEST['record_selector']) && !in_array($row[$FieldCountTV], $_REQUEST['record_selector'])) continue;
 
 					$attr_id = html_attr($row[$FieldCountTV]); /* pk value suitable for inserting into html tag attributes */
 					$js_id = addslashes($row[$FieldCountTV]); /* pk value suitable for inserting into js strings */

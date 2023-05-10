@@ -37,7 +37,6 @@
             <li><a href="blogs_view.php"><i class="fa fa-rss"></i>Blogs</a></li>
             <li><a href="blog_categories_view.php"><i class="fa fa-tags"></i>Categories</a></li>
             <li><a href="blogs_view.php"><i class="fa fa-check"></i>Published</a></li>
-            <li><a href="#"><i class="fa fa-tasks"></i>Drafts</a></li>
             <?php
             $usernow=getLoggedMemberID();
             if ($usernow=="admin") {
