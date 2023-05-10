@@ -67,7 +67,7 @@
 				</div>
 				<div class="w3layouts-agile-copyrightbottom">
 					<p> Responsive Blog Site <?php $current=date("Y"); print_r($current);?> | Brought To You by
-						<a href="http://code-projects.org/">Code-Projects</a>
+						<a href="http://fasik1377.github.io/portfolio1">Fasika Abera</a>
 					</p>
 
 				</div>

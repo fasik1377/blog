@@ -101,12 +101,12 @@
 
 <?php if(!$noSignup){ ?>
 	<div class="row">
-		<div class="hidden-xs col-sm-4 col-md-6 col-lg-8" id="signup_splash">
+		<div class="hidden-xs" id="signup_splash">
 			<!-- customized splash content here -->
 		</div>
 
 		<div class="col-sm-8 col-md-6 col-lg-4">
-			<div class="panel panel-success">
+			<div class="panel panel-success" style="box-shadow: 20px 20px 50px grey;">
 
 				<div class="panel-heading">
 					<h1 class="panel-title"><strong><?php echo $Translation['sign up here']; ?></strong></h1>
@@ -166,6 +166,9 @@
 						<div class="row">
 							<div class="col-sm-offset-3 col-sm-6">
 								<button class="btn btn-primary btn-lg btn-block" value="signUp" id="submit" type="submit" name="signUp"><?php echo $Translation['sign up']; ?></button>
+							</div>
+							<div class="col-sm-offset-3 col-sm-6">
+							<a href="/blog/index.php" class="btn btn-info btn-lg btn-block" style="margin-top:10px">Return to Main</a>
 							</div>
 						</div>
 

@@ -5,14 +5,13 @@
 	<div class="alert alert-danger"><?php echo $Translation['login failed']; ?></div>
 <?php } ?>
 
-<div class="row">
-	<div class="col-sm-6 col-lg-8" id="login_splash">
+<div class="row" style="margin-top:200px">
+	<div class="col-sm-6 col-lg-4" id="login_splash">
 		<!-- customized splash content here -->
 	</div>
 	<div class="col-sm-6 col-lg-4">
-		<div class="panel panel-success">
-
-			<div class="panel-heading">
+		<div class="panel panel-success" style="box-shadow: 20px 20px 50px grey;">
+			<div class="panel-heading ">
 				<h1 class="panel-title"><strong><?php echo $Translation['sign in here']; ?></strong></h1>
 				<?php if(sqlValue("select count(1) from membership_groups where allowSignup=1")){ ?>
 					<a class="btn btn-success pull-right" href="membership_signup.php"><?php echo $Translation['sign up']; ?></a>
@@ -41,6 +40,9 @@
 					<div class="row">
 						<div class="col-sm-offset-3 col-sm-6">
 							<button name="signIn" type="submit" id="submit" value="signIn" class="btn btn-primary btn-lg btn-block"><?php echo $Translation['sign in']; ?></button>
+						</div>
+						<div class="col-sm-offset-3 col-sm-6">
+							<a href="/blog/index.php" class="btn btn-info btn-lg btn-block" style="margin-top:10px">Return to Main</a>
 						</div>
 					</div>
 				</form>

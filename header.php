@@ -82,6 +82,19 @@
 								<a class="nav-link" href="about.php">About</a>
 							</li>
 								<?php } ?>
+							<?php  $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        								if(strpos($url,'category.php') == true){?>
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+								    aria-expanded="false">
+									Categories
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#"></a>
+									<?php getcategoriesmenu("blog_categories"); ?>
+								</div>
+							</li>
+							<?php }else { ?>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 								    aria-expanded="false">
@@ -92,6 +105,7 @@
 									<?php getcategoriesmenu("blog_categories"); ?>
 								</div>
 							</li>
+								<?php }?>
 							<?php  $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
         								if(strpos($url,'contact.php') == true){?>
 							<li class="nav-item active">
