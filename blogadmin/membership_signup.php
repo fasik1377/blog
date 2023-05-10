@@ -168,7 +168,7 @@
 								<button class="btn btn-primary btn-lg btn-block" value="signUp" id="submit" type="submit" name="signUp"><?php echo $Translation['sign up']; ?></button>
 							</div>
 							<div class="col-sm-offset-3 col-sm-6">
-							<a href="/blog/index.php" class="btn btn-info btn-lg btn-block" style="margin-top:10px">Return to Main</a>
+							<a href="/blog/index.php" class="btn btn-info btn-lg btn-block" style="margin-top:10px">Return to Blog</a>
 							</div>
 						</div>
 

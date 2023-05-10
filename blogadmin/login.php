@@ -28,13 +28,6 @@
 					<div class="form-group">
 						<label class="control-label" for="password"><?php echo $Translation['password']; ?></label>
 						<input class="form-control" name="password" id="password" type="password" placeholder="<?php echo $Translation['password']; ?>" required>
-						<span class="help-block"><?php echo $Translation['forgot password']; ?></span>
-					</div>
-					<div class="checkbox">
-						<label class="control-label" for="rememberMe">
-							<input type="checkbox" name="rememberMe" id="rememberMe" value="1">
-							<?php echo $Translation['remember me']; ?>
-						</label>
 					</div>
 
 					<div class="row">
@@ -42,7 +35,7 @@
 							<button name="signIn" type="submit" id="submit" value="signIn" class="btn btn-primary btn-lg btn-block"><?php echo $Translation['sign in']; ?></button>
 						</div>
 						<div class="col-sm-offset-3 col-sm-6">
-							<a href="/blog/index.php" class="btn btn-info btn-lg btn-block" style="margin-top:10px">Return to Main</a>
+							<a href="/blog/index.php" class="btn btn-info btn-lg btn-block" style="margin-top:10px">Return to Blog</a>
 						</div>
 					</div>
 				</form>
